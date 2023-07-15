@@ -1,0 +1,108 @@
+.features {
+    background-color:$sacramento-state-green;
+    background-image: url(../../images/png/features-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.features__container {
+    display: flex;
+    justify-content: space-between;
+    .features__left__title__wrapper{
+        width: 100%;
+        max-width: 445px;
+        .features__divider{
+            background-color:$light-coral;
+            margin-bottom: 5.4rem;
+        }
+        .features__left__title{
+            width: 100%;
+        }
+    }
+}
+
+.features__right__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    .features__right__item{
+        display: flex;
+        gap: 2.3rem;
+        .features__right__item__content{
+            .features__right__item__content__title{
+                color: $light-coral;
+                letter-spacing: 1px;
+                margin-bottom: 1.6rem;
+            }   
+            .features__right__item__content__text{
+                opacity: 0.800000011920929;
+                max-width: 425px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:870px) {
+    .features__container{
+        flex-direction: column;
+        gap: 6.4rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .features{
+        background-position: top right;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        .features__container{
+            padding-left: 9rem;
+            padding-right: 9rem;
+        }
+    }
+    .features__left__title{
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .features{
+        .features__container{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width:375px){
+    .features{
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+        .features__container{
+            padding-left: 2.4rem;
+            padding-right: 2.4rem;
+            .features__left__title__wrapper{
+                max-width: 240px;
+            }
+            .features__right__list{
+                gap: 4.8rem;
+                .features__right__item{
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .features__right__item__content{
+        width: 100%;
+        max-width: 327px;
+        .features__right__item__content__text{
+            width: 100%;
+            max-width: 327px;
+        }
+    }
+}
