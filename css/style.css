@@ -723,6 +723,246 @@ h2 {
     max-width: 327px;
   }
 }
+.comments {
+  background-color: #004047;
+  background-image: url(../../images/png/comments-bg-left.png), url(../../images/png/comments-bg-right.png);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.comments__container .comments__title {
+  width: 100%;
+  max-width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5.6rem;
+  text-align: center;
+}
+.comments__container .comments__title .rapture-blue-text {
+  color: #79C8C7;
+}
+.comments__container .comments__cards {
+  display: flex;
+  gap: 3rem;
+}
+.comments__container .comments__cards .comments__cards__item {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  background-image: url(../../images/png/comments-item-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 3.6rem;
+}
+.comments__container .comments__cards .comments__cards__item .comments__cards__item__text {
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.comments__container .comments__cards .comments__cards__item .commments__cards__item__title {
+  color: #79C8C7;
+  letter-spacing: 1px;
+}
+.comments__container .comments__cards .comments__cards__item .comments__cards__item__description {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 3.2rem;
+}
+.comments__container .comments__cards .comments__cards__item .comments__cards__item__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .comments .comments__title {
+    font-size: 3.2rem;
+    max-width: 480px;
+  }
+  .comments .comments__cards {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .comments .comments__cards .comments__cards__item {
+    max-width: 573px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .comments .comments__cards .comments__cards__item .comments__cards__item__description {
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .comments {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+}
+.contact {
+  background-image: url(../../images/png/contact-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: #F67E7E;
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+}
+.contact .contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .contact__container .contact__title {
+  color: #012F34;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .contact .contact__container {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+  .contact .contact__title {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .contact .contact__container {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .contact .contact__container .contact__title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact__title {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.footer {
+  background-color: #002529;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+.footer .footer__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer__container .footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-right: 12.5rem;
+}
+.footer .footer__container .footer__nav .footer__nav__list {
+  display: flex;
+  gap: 4rem;
+}
+.footer .footer__container .footer__nav .footer__nav__list .footer__nav__item .footer__nav__link {
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.footer .footer__container .footer__nav .footer__nav__list .footer__nav__item .footer__nav__link:hover {
+  color: #F67E7E;
+}
+.footer .footer__container .footer__contact address {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__container .footer__contact address .footer__contact__link {
+  color: #FFFFFF;
+  font-style: normal;
+  opacity: 0.6000000238;
+}
+.footer .footer__container .footer__social {
+  text-align: right;
+  margin-left: auto;
+}
+.footer .footer__container .footer__social .footer__social__icons {
+  margin-bottom: 5rem;
+}
+.footer .footer__container .footer__social .footer__social__icons .footer__social__icon:hover svg path {
+  fill: #F67E7E;
+}
+.footer .footer__container .footer__social .footer__social__text {
+  opacity: 0.6000000238;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+  }
+  .footer .footer__container .footer__nav .footer__logo {
+    margin-bottom: 1rem;
+  }
+  .footer .footer__container .footer__contact {
+    margin-left: auto;
+  }
+  .footer .footer__container .footer__contact address {
+    text-align: right;
+  }
+  .footer .footer__container .footer__social {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+    padding-bottom: 0;
+  }
+  .footer .footer__container .footer__social .footer__social__text {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 495px) {
+  .footer {
+    padding-top: 6.6rem;
+    padding-bottom: 6.4rem;
+  }
+  .footer .footer__container {
+    flex-direction: column;
+  }
+  .footer .footer__container .footer__nav {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  .footer .footer__container .footer__contact {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .footer__container .footer__contact address {
+    text-align: center;
+  }
+  .footer .footer__container .footer__social {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    max-width: 255px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer .footer__container .footer__nav {
+    margin-bottom: 2.4rem;
+  }
+  .footer .footer__container .footer__nav .footer__logo__img {
+    width: 96px;
+    height: 24px;
+  }
+  .footer .footer__container .footer__social .footer__social__icons {
+    margin-bottom: 1.6rem;
+  }
+}
 main {
   flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */

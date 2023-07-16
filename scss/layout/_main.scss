@@ -1,3 +1,5 @@
+// FEATURES
+
 .features {
     background-color:$sacramento-state-green;
     background-image: url(../../images/png/features-bg-img.png);
@@ -44,7 +46,6 @@
         }
     }
 }
-
 
 @media screen and (max-width:870px) {
     .features__container{
@@ -106,3 +107,142 @@
         }
     }
 }
+
+
+
+// COMMENTS
+
+.comments {
+    background-color:$deep-jungle-green;
+    background-image: url(../../images/png/comments-bg-left.png) , url(../../images/png/comments-bg-right.png);
+    background-position: top left , bottom right;
+    background-repeat: no-repeat;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+.comments__container {
+    .comments__title{
+        width: 100%;
+        max-width: 932px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5.6rem;
+        text-align: center;
+        .rapture-blue-text{
+            color: $rapture-blue;
+        }
+    }
+    .comments__cards{
+        display: flex;
+        gap: 3rem;
+        .comments__cards__item{
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            background-image:url(../../images/png/comments-item-bg.png) ;
+            background-repeat: no-repeat;
+            background-position: top center;
+            padding-top: 3.6rem;
+            .comments__cards__item__text{
+                font-weight: 600;
+                margin-bottom: 2.4rem;
+            }
+            .commments__cards__item__title{
+                color: $rapture-blue;
+                letter-spacing: 1px;
+            }
+            .comments__cards__item__description{
+                font-style: italic;
+                font-size: 1.3rem;
+                margin-bottom: 3.2rem;
+            }
+            .comments__cards__item__img{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .comments{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        .comments__title{
+            font-size: 3.2rem;
+            max-width: 480px;
+            // line-height: 1;
+        }
+        .comments__cards{
+            flex-direction: column;
+            gap: 4.8rem;
+            .comments__cards__item{
+                max-width: 573px;
+                margin-right: auto;
+                margin-left: auto;
+                .comments__cards__item__description{
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .comments{
+        padding-top: 14rem;
+        padding-bottom: 14rem;
+    }
+}
+
+
+// CONTACT-US
+.contact {
+    background-image: url(../../images/png/contact-left-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color:$light-coral;
+    padding-top: 7.6rem;
+    padding-bottom: 7.6rem;
+    .contact__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contact__title{
+            color: $sacramento-state-green;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contact{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        .contact__container{
+            padding-left: 9rem;
+            padding-right: 9rem;
+        }
+        .contact__title{
+            font-size: 3.2rem;
+        }
+    }
+}
+@media screen and (max-width:670px) {
+    .contact{
+        .contact__container{
+            flex-direction: column;
+            gap: 2.4rem;
+            .contact__title{
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .contact__title{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
